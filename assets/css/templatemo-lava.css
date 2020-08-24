@@ -756,9 +756,10 @@ about
   z-index: 9;
 }
 
-/* .about-feature {
-  background-color: white;
-} */
+.about-feature {
+  margin: 0 auto;
+  /* background-color: white; */
+}
 
 @media (max-width: 992px) {
   .features-item {
@@ -931,6 +932,10 @@ examples
   background-image: url(../images/ex6.png) !important;
 }
 
+#examples .ex7 {
+  background-image: url(../images/ex7.png) !important;
+}
+
 #examples .item .examples-content ul li {
   display: inline-block;
   margin: 0px 1px;
@@ -1004,6 +1009,31 @@ examples
     display: none!important;
   }
 }
+
+/* 
+---------------------------------------------
+donate
+--------------------------------------------- 
+*/
+
+#donate .donate {
+  margin: 0 auto;
+}
+
+#donate p {
+  margin-bottom: 50px;
+}
+
+#donate img {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#donate .features-item {
+  border-color: #3b7bbf ;
+} 
+
 
 /* 
 ---------------------------------------------
