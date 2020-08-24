@@ -15,7 +15,7 @@ Table of contents
 04. header
 05. welcome
 06. features
-07. testimonials
+07. examples
 08. contact
 09. footer
 10. preloader
@@ -80,7 +80,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  background-color: #fff;
+  background-color: #191a20 !important;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -213,7 +213,7 @@ button.main-button:hover {
   text-align: center;
   font-size: 42px;
   font-weight: 700;
-  color: #1e1e1e;
+  color: #bbbbbb;
   margin-bottom: 25px;
 }
 
@@ -236,7 +236,9 @@ header
 */
 
 .background-header {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: rgb(246,140,78);
+  background: linear-gradient(132deg, rgba(246,140,78,1) 0%, rgba(217,53,86,1) 100%); 
   height: 80px!important;
   position: fixed!important;
   top: 0px;
@@ -247,7 +249,7 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  color: #1e1e1e!important;
+  color: #1e1e1e !important;
 }
 
 .background-header .main-nav .nav li:hover a {
@@ -278,7 +280,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #191a20;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
@@ -553,12 +555,13 @@ header
 
 @media (max-width: 991px) {
   .logo {
-    text-align: center;
+    text-align: left !important;
     float: none!important;
+    color: #1e1e1e !important;
+    font-size: 1.5em !important;
   }
   .header-area {
     background-color: #f7f7f7;
-    padding: 0px 15px;
     height: 80px;
     box-shadow: none;
     text-align: center;
@@ -567,7 +570,9 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    position: absolute;
+    left: 55px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -675,12 +680,12 @@ welcome
   line-height: 80px;
   letter-spacing: 1px;
   margin-bottom: 30px;
-  color: #191a20;
+  color: #fba70b;
 }
 
 .welcome-area .header-text h1 em {
   font-style: normal;
-  color: #fba70b;
+  color: #f1556a
 }
 
 .welcome-area .header-text p {
@@ -751,6 +756,10 @@ about
   z-index: 9;
 }
 
+/* .about-feature {
+  background-color: white;
+} */
+
 @media (max-width: 992px) {
   .features-item {
     margin-bottom: 45px;
@@ -761,7 +770,9 @@ about
   border-radius: 5px;
   padding: 60px 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 0px 25px rgba(182, 0, 45, 0.7); */
+  border: 4px solid #f1556a;
+  border-style: dashed;
 }
 
 .features-item h2 {
@@ -784,7 +795,7 @@ about
 .features-item h4 {
   margin-top: 0px;
   font-size: 22px;
-  color: #1e1e1e;
+  color: #ffffff;
   margin-bottom: 25px;
 }
 
@@ -793,10 +804,14 @@ about
   display: inline-block;
 }
 
+.features-icon img {
+  margin-left: 135px;
+}
+
 
 /*
 ---------------------------------------------
-promotion
+functions
 ---------------------------------------------
 */
 
@@ -810,37 +825,37 @@ promotion
   margin-top: -200px;
 }
 
-#promotion {
+#functions {
   padding: 100px 0px;
 }
 
-#promotion .left-image {
+#functions .left-image {
   align-self: center;
 }
 
-#promotion .right-text ul {
+#functions .right-text ul {
   padding: 0;
   margin: 0;
 }
 
-#promotion .right-text ul li {
+#functions .right-text ul li {
   display: inline-block;
   margin-bottom: 60px;
 }
 
-#promotion .right-text ul li:last-child {
+#functions .right-text ul li:last-child {
   margin-bottom: 0px;
 }
 
-#promotion .right-text img {
+#functions .right-text img {
   display: inline-block;
   float: left;
   margin-right: 30px;
 }
 
-#promotion .right-text h4 {
+#functions .right-text h4 {
   font-size: 22px;
-  color: #1e1e1e;
+  color: #f1556a;
   margin-bottom: 15px;
   margin-top: 3px;
 }
@@ -848,7 +863,7 @@ promotion
 
 /*
 --------------------------------------------
-testimonials
+examples
 --------------------------------------------
 */
 .right-image-decor {
@@ -862,17 +877,17 @@ testimonials
   margin-top: -200px;
 }
 
-#testimonials {
+#examples {
   padding-top: 100px;
   position: relative;
   z-index: 9;
 }
 
-#testimonials .item {
+#examples .item {
   position: relative;
 }
 
-#testimonials .item .testimonial-content {
+#examples .item .examples-content {
   background: rgb(244,129,63);
   background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
   margin-left: 60px;
@@ -880,37 +895,72 @@ testimonials
   text-align: center;
   border-radius: 5px;
 }
+#examples .examples-content {
+  height: 284px !important;
+  width: 383px !important;
+}
 
-#testimonials .item .testimonial-content ul li {
+#examples h1 {
+  color: white;
+  margin-left: -250px;
+  margin-top:  -80px;
+  font-size: 4em;
+}
+
+#examples .ex1 {
+  background-image: url(../images/ex1.png) !important;
+}
+
+#examples .ex2 {
+  background-image: url(../images/ex2.png) !important;
+}
+
+#examples .ex3 {
+  background-image: url(../images/ex3.png) !important;
+}
+
+#examples .ex4 {
+  background-image: url(../images/ex4.png) !important;
+}
+
+#examples .ex5 {
+  background-image: url(../images/ex5.png) !important;
+}
+
+#examples .ex6 {
+  background-image: url(../images/ex6.png) !important;
+}
+
+#examples .item .examples-content ul li {
   display: inline-block;
   margin: 0px 1px;
 }
 
-#testimonials .item .testimonial-content ul li i {
+#examples .item .examples-content ul li i {
   color: #fff;
   font-size: 13px;
 }
 
-#testimonials .item .testimonial-content h4 {
+#examples .item .examples-content h4 {
   font-size: 22px;
   margin-top: 20px;
   color: #fff;
 }
 
-#testimonials .item .testimonial-content p {
+#examples .item .examples-content p {
   color: #fff;
   font-style: italic;
   font-weight: 200;
   margin: 20px 0px 15px 0px;
 }
 
-#testimonials .item .testimonial-content span {
+#examples .item .examples-content span {
   color: #fff;
   font-weight: 200;
   font-size: 13px;
 }
 
-#testimonials .author img {
+#examples .author img {
   max-width: 120px;
   margin-bottom: -60px;
 }
@@ -991,6 +1041,11 @@ footer .footer-content {
   padding: 120px 0px;
 }
 
+footer .footer-content a {
+  position: absolute;
+  margin-top: 30px;
+}
+
 .contact-form {
   position: relative;
   z-index: 10;
@@ -1001,8 +1056,15 @@ footer .footer-content {
   
 }
 
+.contact-form h2 {
+  position: relative;
+  color: #f1556a;
+} 
+
+
 footer .right-content {
   align-self: center;
+  margin: 0 auto;
 }
 
 .contact-form input,
@@ -1027,6 +1089,10 @@ footer .right-content {
   height: 150px;
   resize: none;
   padding: 20px;
+}
+
+.support-server {
+  margin: 0 auto;
 }
 
 .contact-form {
@@ -1064,11 +1130,12 @@ footer .right-content {
 }
 
 .footer-content .right-content p {
-  color: #FFF;
+  color: #888;
 }
 
 .footer-content .right-content a {
   color: #FFF;
+  margin-top: 17px;
 }
 
 .footer-content .right-content a:hover {
@@ -1122,7 +1189,7 @@ footer .copyright {
 }
 
 footer .sub-footer {
-  padding: 60px 0px;
+  padding: 20px 0px;
   border-top: 1px solid rgba(250,250,250,0.3);
   text-align: center;
 }
@@ -1137,7 +1204,7 @@ footer .sub-footer a:hover {
 
 footer .sub-footer p {
   color: #fff;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
