@@ -939,6 +939,10 @@ examples
   background-image: url(../images/ex7.png) !important;
 }
 
+#examples .ex8 {
+  background-image: url(../images/ex8.png) !important;
+}
+
 #examples .item .examples-content ul li {
   display: inline-block;
   margin: 0px 1px;
