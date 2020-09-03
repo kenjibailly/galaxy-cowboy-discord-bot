@@ -829,6 +829,7 @@ functions
   display: inline-block;
   height: 110%;
   margin-top: -200px;
+  z-index: 0;
 }
 
 #functions {
@@ -1033,6 +1034,7 @@ donate
 
 #donate .donate {
   margin: 0 auto;
+  margin-top:50px;
 }
 
 #donate p {
@@ -1344,5 +1346,105 @@ preloader
   }
   100% {
     opacity: 0;
+  }
+}
+
+
+/* Commands */
+
+#commands {
+  margin-top: 150px;
+
+}
+
+.commands {
+  z-index: 99;
+}
+
+.command {
+  display: inline-block;
+  padding: 1.5rem 1rem 1rem 1.5rem;
+  background: rgb(47, 49, 54) none repeat scroll 0% 0%;
+  border-color: rgb(114, 137, 218);
+  border-radius: 4px;
+  border-left: 4px solid #2fff8b;
+  font-family: Helvetica;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+
+.commands h3 {
+  font-family: Helvetica;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-bottom: 15px;
+
+}
+
+.commands h4 {
+  max-width: 100%;
+  margin: 12px 6px 12px;
+  border: medium none;
+  background: rgb(32, 34, 37) none repeat scroll 0% 0%;
+  padding: 0.5em;
+  border-radius: 4px;
+  color: rgb(185, 187, 190);
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  white-space: pre-wrap;
+  font-family: Consolas;
+}
+
+.commands-img {
+  margin-top: 150px;
+}
+
+.commands p {
+  color: rgb(220, 221, 222);
+}
+
+.commands .active {
+  visibility: visible;
+}
+
+.commands .passive {
+  visibility: hidden;
+}
+
+.filter {
+  display: inline;
+}
+
+.command-nav .nav {
+  width: 767px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.command-nav li {
+  /* padding: 8px 50px; */
+  line-height: 2.5;
+  height: 40px;
+  width: 150px;
+  background-color: #2fff8b;
+}
+
+.command-nav a {
+  color: #191a20;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+@media (max-width: 991px) {
+  .command-nav .nav {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 70px;
   }
 }

@@ -92,26 +92,72 @@
 				$(athis).addClass('active');
 			});
 		});
-
-		$(window).scroll(function (event) {
-			var scrollPos = $(document).scrollTop() + 80;
-
-			if (scrollPos === 0) {
-				$('a[href^="#welcome"]').addClass('active');
-				return;
+		var command, info, config, weekly, poll, status;
+		$('.filter').on('click', function(e) {
+			// e.preventDefault();
+			var input = $(this).attr("data-filter");
+			switch (input) {
+				case "info":
+					$('.commands').append(command);
+					info = $('.info').remove();
+					command = $('.command').remove();
+					$('.commands').append(info);
+					$('.info').css('opacity', "0");
+					$('.info').animate({
+						opacity: '1'
+					}, 1000)
+					break;
+				case "config":
+					$('.commands').append(command);
+					config = $('.config').remove();
+					command = $('.command').remove();
+					$('.commands').append(config);
+					$('.config').css('opacity', "0");
+					$('.config').animate({
+						opacity: '1'
+					}, 1000)
+				break;
+				case "weekly":
+					$('.commands').append(command);
+					weekly = $('.weekly').remove();
+					command = $('.command').remove();
+					$('.commands').append(weekly);
+					$('.weekly').css('opacity', "0");
+					$('.weekly').animate({
+						opacity: '1'
+					}, 1000)
+					break;
+				case "poll":
+					$('.commands').append(command);
+					poll = $('.poll').remove();
+					command = $('.command').remove();
+					$('.commands').append(poll);
+					$('.poll').css('opacity', "0");
+					$('.poll').animate({
+						opacity: '1'
+					}, 1000)
+					break;
+				case "status":
+					$('.commands').append(command);
+					status = $('.status').remove();
+					command = $('.command').remove();
+					$('.commands').append(status);
+					$('.status').css('opacity', "0");
+					$('.status').animate({
+						opacity: '1'
+					}, 1000)
+					break;
+				default:
+					break;
 			}
-			$('.menu-item').not('[href=""]').not('[href="javascript:;"]').each(function () {
-				var currLink = $(this);
-				var refElement = $(currLink.attr("href"));
 
-				if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-					$('.menu-item').removeClass("active");
-					currLink.addClass("active");
-				} else {
-					currLink.removeClass("active");
-				}
-			});
+			if($(e).attr("class")) {
+				console.log("test");
+			}
+			// $('.command').removeClass('active');
+			// $('.command').addClass('passive');
 		})
+
 	});
 
 	const Accordion = {

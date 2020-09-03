@@ -53,15 +53,9 @@ https://templatemo.com/tm-540-lava-landing-page
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-                            <li class="scroll-to-section"><a href="#functions" class="menu-item">Functions</a>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Commands</a>
-                                <ul>
-                                    <li><a href="./commands.html">Commands</a></li>
-                                    <li class="scroll-to-section"><a href="#examples" class="menu-item">Examples</a>
-                                </ul>
+                            <li ><a href="./index.html">Home</a></li>
+                            <li><a href="#commands">Commands</a></li>
+                            <li class="scroll-to-section"><a href="#examples" class="menu-item">Examples</a>
                             </li>
                             <li class="submenu">
                                 <a href="javascript:;">Support</a>
@@ -91,22 +85,12 @@ https://templatemo.com/tm-540-lava-landing-page
     <!-- ***** Header Area End ***** -->
 
 
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
+        <!-- ***** Header Text End ***** -->
 
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Discord Bot</br> <em>Galaxy Cowboy👾</em></h1>
-                        <p>Invite Galaxy Cowboy👾 to your server!</p> 
-                        <a href="https://discord.com/api/oauth2/authorize?client_id=723576740697473084&permissions=1812986945&scope=bot" class="main-button-slider">Invite now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="commands-img col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big"
+        data-scroll-reveal="enter move 30px over 0.6s after 0.4s">
+        <img src="assets/images/left-image.png" width="300px" class="rounded img-fluid d-block mx-auto  offset-lg-2" alt="App">
         <!-- ***** Header Text End ***** -->
     </div>
     <!-- ***** Welcome Area End ***** -->
@@ -114,41 +98,149 @@ https://templatemo.com/tm-540-lava-landing-page
     <div class="left-image-decor"></div>
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="functions">
+    <section class="section" id="commands">
         <div class="container">
-            <div class="row">
+            <div class="row col-lg-12">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="center-heading">
-                        <h2>Discord Bot <em>Functions</em></h2>
-                        <p>See below what Galaxy Cowboy can do!</p>
+                        <h2>Discord Bot <em>Commands</em></h2>
+                        <p>See below which commands you can use!</p>
                     </div>
                 </div>
-                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                <div class="col-12">
+                    <nav class="command-nav mx-auto d-block col-lg-12 col-md-12 col-sm-12">
+                        <ul class="nav col-lg-12 col-md-4 col-sm-4">
+                            <li data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                                <a class="filter" data-filter="info" href="javascript:void(0)">Info</a>
+                            </li>
+                            <li data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                                <a class="filter" data-filter="config" href="javascript:void(0)">Config</a>
+                            </li>
+                            <li data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                                <a class="filter" data-filter="weekly" href="javascript:void(0)">Weekly</a>
+                            </li>
+                            <li data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                                <a class="filter" data-filter="poll" href="javascript:void(0)">Poll</a>
+                            </li>
+                            <li data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                                <a class="filter" data-filter="status" href="javascript:void(0)">Status</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                
+                <div class="commands">
                     <ul>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/about-icon-01.png" alt="">
+                        <li class="command active info" data-scroll-reveal="">
                             <div class="text">
-                                <h4>RSVP</h4>
-                                <p>Make weekly polls that can be timed to end automatically or end them manually to get the results as a percentage.</p>
+                                <h3>❔ ┊ Help</h3>
+                                <h4>*help</h4>
+                                <p>Get all commands in a DM</p>
                             </div>
                         </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/about-icon-02.png" alt="">
+                        <li class="command active info" data-scroll-reveal="">
                             <div class="text">
-                                <h4>Status Enabler</h4>
-                                <p>Create a status that can be timed and configure a channel to post and update all statuses as an overview. 
-                                </p>
+                                <h3>❔ ┊ Examples</h3>
+                                <h4>*examples</h4>
+                                <p>Get all commands in form of an example in a DM</p>
                             </div>
                         </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/about-icon-03.png" alt="">
+                        <li class="command active config" data-scroll-reveal="">
                             <div class="text">
-                                <h4>Polls</h4>
-                                <p>Create polls that can be timed to end automatically or end them manually to get the results as a percentage.</p>
+                                <h3>⚙️ ┊ Setup</h3>
+                                <h4>*setup</h4>
+                                <p>Change prefix and setup status overview channel</p>
+                            </div>
+                        </li>
+                        <li class="command active weekly" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📅 ┊ Weekly poll</h3>
+                                <h4>*weekly "Title" "Starting Date" "Ending Date" "Custom Description"</h4>
+                                <p>All fields are optional except for the Title, default starts today, ends in 7 days. Format: YYYY-MM-DD format</p>
+                            </div>
+                        </li>
+                        <li class="command active weekly" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📅 ┊ Timed (weekly) poll</h3>
+                                <h4>*weekly/poll time=X{s|m|h|d} "Title" ...</h4>
+                                <p>All fields are optional except for the Title, default starts today, ends in 7 days. Format: YYYY-MM-DD format</p>
+                            </div>
+                        </li>
+                        <li class="command active weekly" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📅 ┊ Call to action Weekly Poll</h3>
+                                <h4>*update ID</h4>
+                                <p>where ID is the poll id which appears at the end of the poll</p>
+                            </div>
+                        </li>
+                        <li class="command active poll" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📊 ┊ Y/N poll</h3>
+                                <h4>*poll "Question"</h4>
+                                <p>Create a simple yes / no poll.</p>
+                            </div>
+                        </li>
+                        <li class="command active poll" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📊 ┊ Complex poll [2-10 answers]</h3>
+                                <h4>*poll "Question" "Option 1" "Option 2" ["Option 3" ...]</h4>
+                                <p>Create a complex poll. (quotes are necessary)</p>
+                            </div>
+                        </li>
+                        <li class="command active poll weekly" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📊 ┊ End (weekly) poll</h3>
+                                <h4>*end ID</h4>
+                                <p>where ID is the poll id which appears at the end of the poll</p>
+                            </div>
+                        </li>
+                        <li class="command active status" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>✔️ ┊ Set status</h3>
+                                <h4>*setstatus "Custom Status"</h4>
+                                <p>where ID is the poll id which appears at the end of the poll</p>
+                            </div>
+                        </li>
+                        <li class="command active status" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>✔️ ┊ Set timed status</h3>
+                                <h4>*setstatus time=X{s|m|h|d} "Custom Timed Status"</h4>
+                                <p>Set your custom timed status</p>
+                            </div>
+                        </li>
+                        <li class="command active status" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>✔️ ┊ Remove Current Status</h3>
+                                <h4>*removestatus</h4>
+                                <p>Remove your current status</p>
+                            </div>
+                        </li>
+                        <li class="command active status" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>✔️ ┊ Check Status</h3>
+                                <h4>*status (@user)</h4>
+                                <p>Check status of yourself or of user</p>
+                            </div>
+                        </li>
+                        <li class="command active info" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>✉️ ┊ Invite</h3>
+                                <h4>*invite</h4>
+                                <p>Bot invite link to share, website link, Support Server link, summary of bot.</p>
+                            </div>
+                        </li>
+                        <li class="command active info" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>💰 ┊ Donate</h3>
+                                <h4>*donate</h4>
+                                <p>Donate to help keeping the uptime of the bot.</p>
+                            </div>
+                        </li>
+                        <li class="command active info" data-scroll-reveal="">
+                            <div class="text">
+                                <h3>📜 ┊ TOS</h3>
+                                <h4>*TOS</h4>
+                                <p>Terms of Service, Privacy Policy</p>
                             </div>
                         </li>
                     </ul>
@@ -243,54 +335,6 @@ https://templatemo.com/tm-540-lava-landing-page
         </div>
     </section>
     <!-- ***** Examples Ends ***** -->
-
-       <!-- ***** Features Big Item Start ***** -->
-       <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="row">
-                    <div class="col-lg-8 offset-lg-2">
-                        <div class="center-heading">
-                            <h2>About <em>Me</em></h2>
-                        </div>
-                    </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 about-feature"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>Dev</h2>
-                            <img src="assets/images/features-icon-1.png" alt="">
-                            <h4>HTML CSS JS</h4>
-                            <p>I like to tweak web-based things</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>Me</h2>
-                            <img src="assets/images/features-icon-2.png" alt="">
-                            <h4>Kenji Bailly</h4>
-                            <p>I'm 25 years old based in Belgium</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>Fun</h2>
-                            <img src="assets/images/features-icon-3.png" alt="">
-                            <h4>Hobby</h4>
-                            <p>I'm a hobbyist programmer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
 
            <!-- ***** Features Big Item Start ***** -->
            <section class="section" id="donate">
