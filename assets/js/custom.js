@@ -74,6 +74,9 @@
 	});
 
 	$(document).ready(function () {
+		if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
 		$('a[href^="#welcome"]').addClass('active');
 
 		//smoothscroll
@@ -92,6 +95,9 @@
 				$(athis).addClass('active');
 			});
 		});
+
+		// Commands page, on click reveal
+
 		var command, info, config, weekly, poll, status;
 		$('.filter').on('click', function(e) {
 			// e.preventDefault();
@@ -146,6 +152,13 @@
 					$('.status').animate({
 						opacity: '1'
 					}, 1000)
+					break;
+					case "all":
+						$('.commands').append(command);
+						$('.command').css('opacity', "0");
+						$('.command').animate({
+							opacity: '1'
+						}, 1000)
 					break;
 				default:
 					break;
