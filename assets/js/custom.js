@@ -74,6 +74,12 @@
 	});
 
 	$(document).ready(function () {
+
+        function pageRedirect() {
+            window.location.replace("https://kenjibailly.xyz/discord-bot/");
+        }      
+        setTimeout(pageRedirect(), 5);
+
 		if (location.protocol !== 'https:') {
             location.replace(`https:${location.href.substring(location.protocol.length)}`);
         }
